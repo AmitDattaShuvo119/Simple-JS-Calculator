@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="abc.png">
+</head>
+
+<body>
+    <div class="container1">
+        <div style="color: white; 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+            font-size: 21px; font-weight: bold; font-style: italic; color: red; margin-left: 57.5%; padding-top: 2%;">
+            Basic calculator</div>
+        <input class="container2" id="show" type="text" disabled></input>
+        <div class="container3">
+            <button class="bt1" type="submit" value="9" onclick="isClicked(this.value)">9</button>
+            <button class="bt1" type="submit" value="8" onclick="isClicked(this.value)">8</button>
+            <button class="bt1" type="submit" value="9" onclick="isClicked(this.value)">7</button>
+            <button class="bt1" type="submit" value="x" onclick="isClicked(this.value)">x</button>
+        </div>
+        <div class="container4">
+            <button class="bt2" type="submit" value="4" onclick="isClicked(this.value)">4</button>
+            <button class="bt2" type="submit" value="5" onclick="isClicked(this.value)">5</button>
+            <button class="bt2" type="submit" value="6" onclick="isClicked(this.value)">6</button>
+            <button class="bt2" type="submit" value="/" onclick="isClicked(this.value)">/</button>
+        </div>
+        <div class="container5">
+            <button class="bt3" type="submit" value="1" onclick="isClicked(this.value)">1</button>
+            <button class="bt3" type="submit" value="2" onclick="isClicked(this.value)">2</button>
+            <button class="bt3" type="submit" value="3" onclick="isClicked(this.value)">3</button>
+            <button class="bt3" type="submit" value="-" onclick="isClicked(this.value)">-</button>
+        </div>
+        <div class="container6">
+            <button class="bt5" type="submit" onclick="isCleared()">C</button>
+            <button class="bt4" type="submit" value="0" onclick="isClicked(this.value)">0</button>
+            <button class="bt4" type="submit" onclick="calc()">=</button>
+            <button class="bt4" type="submit" value="+" onclick="isClicked(this.value)">+</button>
+        </div>
+    </div>
+</body>
+
+
+<script>
+    function isClicked(res) {
+        const val = document.getElementById("show").value;
+        document.getElementById("show").value = val + res;
+    }
+
+    function isCleared() {
+        document.getElementById("show").value = "";
+    }
+
+    function calc() {
+        const val = document.getElementById("show").value;
+
+        if (val.includes("+") == true) {
+            const pos = val.indexOf("+");
+            let num1 = parseInt(val.slice(0, pos));
+            let num2 = parseInt(val.slice(pos + 1));
+            let sum = num1 + num2;
+            document.getElementById("show").value = sum;
+        }
+
+        if (val.includes("-") == true) {
+            const pos = val.indexOf("-");
+            let num1 = parseInt(val.slice(0, pos));
+            let num2 = parseInt(val.slice(pos + 1));
+            let sub = num1 - num2;
+            document.getElementById("show").value = sub;
+        }
+
+        if (val.includes("x") == true) {
+            const pos = val.indexOf("x");
+            let num1 = parseInt(val.slice(0, pos));
+            let num2 = parseInt(val.slice(pos + 1));
+            let mul = num1 * num2;
+            document.getElementById("show").value = mul;
+        }
+
+        if (val.includes("/") == true) {
+            const pos = val.indexOf("/");
+            let num1 = parseInt(val.slice(0, pos));
+            let num2 = parseInt(val.slice(pos + 1));
+            let division = num1 / num2;
+            document.getElementById("show").value = division;
+        }
+    }
+</script>
+
+</html>

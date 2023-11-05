@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url(./fonts/digital-7.ttf);
+}
+
+.container1 {
+    background-color: #2F2F2F;
+    width: 430px;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px #888;
+    margin-top: 10%;
+    position: relative;
+    border: 7px black solid;
+}
+
+.container2 {
+    background-color: #CCCCCC;
+    width: 380px;
+    height: 55px;
+    margin: 2% 0 0 5.8%;
+    border-radius: 4px;
+    position: absolute;
+    border: 5px #4D4D4D solid;
+    font-size: 40px;
+    font-family: "digital-7", sans-serif;
+}
+
+.container3 {
+    margin: 30% 0 0 8%;
+}
+
+.container3>.bt1 {
+    width: 80px;
+    height: 60px;
+    background-color: #636262;
+    border: none;
+    border-radius: 5px;
+    margin-left: 7px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 5px 5px rgb(40, 40, 40);
+}
+
+.bt1:hover {
+    background-color: #555454;
+}
+
+.bt1:active {
+    background-color: #555454;
+    box-shadow: 0 2px 5px #666;
+    transform: translateY(2px);
+}
+
+.container4 {
+    margin: 2.5% 0 0 8%;
+}
+
+.container4>.bt2 {
+    width: 80px;
+    height: 60px;
+    background-color: #636262;
+    border: none;
+    border-radius: 5px;
+    margin-left: 7px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 5px 5px rgb(40, 40, 40);
+}
+
+.bt2:hover {
+    background-color: #555454;
+}
+
+.bt2:active {
+    background-color: #555454;
+    box-shadow: 0 2px 5px #666;
+    transform: translateY(2px);
+}
+
+.container5 {
+    margin: 2.5% 0 0 8%;
+}
+
+.container5>.bt3 {
+    width: 80px;
+    height: 60px;
+    background-color: #636262;
+    border: none;
+    border-radius: 5px;
+    margin-left: 7px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 5px 5px rgb(40, 40, 40);
+}
+
+.bt3:hover {
+    background-color: #555454;
+}
+
+.bt3:active {
+    background-color: #555454;
+    box-shadow: 0 2px 5px #666;
+    transform: translateY(2px);
+}
+
+.container6 {
+    margin: 2.5% 0 0 8%;
+}
+
+.container6>.bt4 {
+    width: 80px;
+    height: 60px;
+    background-color: #636262;
+    border: none;
+    border-radius: 5px;
+    margin-left: 7px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 5px 5px rgb(40, 40, 40);
+}
+
+.bt4:hover {
+    background-color: #555454;
+}
+
+.bt4:active {
+    background-color: #555454;
+    box-shadow: 0 2px 5px #666;
+    transform: translateY(2px);
+}
+
+.container6>.bt5 {
+    width: 80px;
+    height: 60px;
+    background-color: rgb(198, 24, 24);
+    border: none;
+    border-radius: 5px;
+    margin-left: 7px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 5px 5px rgb(40, 40, 40);
+}
+
+.bt5:hover {
+    background-color: rgb(225, 26, 26);
+}
+
+.bt5:active {
+    background-color: rgb(225, 26, 26);
+    box-shadow: 0 2px 5px rgb(225, 26, 26);
+    transform: translateY(2px);
+}
